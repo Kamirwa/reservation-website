@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKING INPUT FORM</title>
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for left image and right form */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Left side (image) */
+        .left-side {
+            flex: 1;
+            background-image: url('https://i.pinimg.com/564x/b6/ea/9a/b6ea9a6fa50a0af51f6947ffa889d3d0.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .left-side::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            border-radius: 15px;
+        }
+
+        .left-side img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            z-index: 2;
+        }
+
+        /* Right side (form) */
+        .right-side {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form styles */
+        form {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="date"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+
+        /* Link styles */
+        a {
+            text-decoration: none;
+            padding: 8px 16px;
+            background-color: #0056b3;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="https://i.pinimg.com/564x/b6/ea/9a/b6ea9a6fa50a0af51f6947ffa889d3d0.jpg" alt="Background Image">
+        </div>
+        <div class="right-side">
+            <h1>Make your booking right here</h1>
+            <form action="booking.php" method="post">
+                <label for="checkin">Check-in date:</label>
+                <input type="date" id="checkin" name="checkin"><br><br>
+                <label for="checkout">Check-out date:</label>
+                <input type="date" id="checkout" name="checkout"><br><br>
+                <label for="guests">Number of guests:</label>
+                <input type="number" id="guests" name="guests"><br><br>
+                <input type="submit" value="Book now">
+            </form>
+            <a href="paymentinput.html">pay for your booking</a> <br>
+            <a href="maintain.html">Go to Maintenance Page</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <link rel = "stylesheet" href = "searchstyle.css">
+    </head>
+    <body>
+        <div class = "container">
+            <h1 class = "heading">SEARCH</h1>
+            <!--creating div for input boxes-->
+            <div class = "container-box">
+
+                <div class = "box">
+                    <div class="box-img">
+                        <img src="../images/family.jpg" alt="Guest Image" class="imgsize">
+                    </div>
+                    
+                    <div class="box-text">
+                        <a href ="guestsearch.php"><h3>GUEST SEARCH FORM</h3></a>
+                        <p>Search up the guest currently registered in the system</p>
+                    </div>
+
+                </div>
+
+                <div class = "box">
+                    <div class="box-img">
+                        <img src="../images/country.jpg" alt="Country Image"  class="imgsize">
+                    </div>
+
+                    <div class="box-text">
+                        <a href ="countrysearch.php"><h3>COUNTRIES SEARCH FORM</h3></a>
+                        <p>View the wide variety of countries our marvelous rentals are located!</p>
+                    </div>
+                    
+                </div>
+
+                <div class = "box">
+                    <div class="box-img">
+                        <img src="../images/review.jpg" alt="Review Image"  class="imgsize">
+                    </div>
+                   
+                    
+                    <div class="box-text">
+                        <a href ="reviewsearch.php"><h3>REVIEW SEARCH FORM</h3></a>
+                        <p>View the reviews we have from our previously satisfied customers!</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+   </body>
+
+</html>
+
+
+
+
+<!--
+/* styling heading and body*/
+body{
+    background-color: #445069; 
+    font-family: "Playfair Display", serif;
+}
+.container{
+    display: grid;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:black;
+    font-size: 60px;
+}
+/* styling boxes of forms*/
+.container .container-box .box{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 5px 5px 6px #333;
+    text-align: center;
+    padding: 20 px 30 px;
+    box-sizing: border-box;
+    transition: .2s, linear;
+}
+.container-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 15px;
+}
+.container .container-box .box h3{
+    color:#444;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container .container-box .box p{
+    font-size: 15px;
+    font-style: 100;
+    color:#555;
+}
+/*userinput form*/
+.login-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+  }
+  .login-container label,
+  .login-container input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+-->
