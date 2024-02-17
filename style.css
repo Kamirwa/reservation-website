@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    /*font-family: 'Raleway', sans-serif;*/
+}
+
+/*Heo Section*/
+.hero{
+	background-image: url('images/heropic.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    color: #fff; 
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+
+.logo{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+.nav-header a{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content{
+	color: #fff;
+}
+
+.content h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.content p{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.btn{
+    margin-top: 25px;
+}
+
+.search{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    border: solid #fff 1px;
+    opacity: 0.7;
+}
+
+.search:hover {
+	transform: scale(0.98);
+}
+
+/*Featured Rentals*/
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-rentals {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rental-card {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rental-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rental-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.rental-card:hover .rental-text {
+    opacity: 1;
+}
+
+/*Why Choose Us?*/
+.why-head{
+    color:#fff;
+}
+
+.why-choose{
+    background-color: rgb(66, 38, 29);
+}
+
+.why-content{
+    display:flex;
+    width: 100%;
+}
+
+.why-img{
+    max-width: 50%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.why-text{
+    color:#fff;
+    width: 40%;
+    padding:20px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.why-info{
+    line-height: 2;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+/*About Us*/
+.about-text{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(66, 38, 29);
+}
+
+/*IMPRINT*/
+.disclaimer{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.contact{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: blanchedalmond;
+}
+
+.cont-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.contsec {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-person{
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.contact-person .contact-text {
+    opacity: 1;
+}
